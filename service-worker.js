@@ -1,6 +1,6 @@
-const CACHE_VERSION = 'v6.2.2';
+const CACHE_VERSION = 'v6.3.0';
 const CACHE_NAME = 'rehab-app-' + CACHE_VERSION;
-const VERSION = '6.2.1';
+const VERSION = '6.3.0';
 const urlsToCache = [
   './',
   './index.html',

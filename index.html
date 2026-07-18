@@ -1733,14 +1733,14 @@ mark {
   });
 })();
 </script>
-<script src="icons.js?v=6.2.2" onerror="this._loadFailed=true"></script>
-<script src="data.js?v=6.2.2" onerror="this._loadFailed=true"></script>
-<script src="scales.js?v=6.2.2" onerror="this._loadFailed=true"></script>
-<script src="app.js?v=6.2.2" onerror="this._loadFailed=true"></script>
+<script src="icons.js?v=6.3.0" onerror="this._loadFailed=true"></script>
+<script src="data.js?v=6.3.0" onerror="this._loadFailed=true"></script>
+<script src="scales.js?v=6.3.0" onerror="this._loadFailed=true"></script>
+<script src="app.js?v=6.3.0" onerror="this._loadFailed=true"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./service-worker.js?v=6.2.2').then(function(reg) {
+    navigator.serviceWorker.register('./service-worker.js').then(function(reg) {
       if (reg.waiting) {
         reg.waiting.postMessage({ type: 'skipWaiting' });
       }
