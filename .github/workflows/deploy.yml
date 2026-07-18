@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [jg]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Clean build artifacts and large data files for deploy
+        run: |
+          echo "Removing redundant large files before deploy..."
+          rm -f single-file-v3.html
+          rm -f index-single.html
+          rm -f diseases.json
+          rm -f muscles.json
+          rm -f muscles-simple.json
+          rm -f muscle-quickref.json
+          rm -f scales-extra.js
+          rm -f clinical-tools.js
+          rm -f rehab-protocols.js
+          rm -f knowledge-base.js
+          rm -f generate_data.py
+          rm -f gen_data.py
+          rm -f inspect_headers.py
+          rm -f inspect_special.py
+          rm -f build_single.py
+          rm -f analyze.js
+          rm -f CODE_WIKI.md
+          rm -f README.md
+          find . -maxdepth 1 -name "*.xlsx" -delete
+          find . -maxdepth 1 -name "*.pdf" -delete
+          find . -maxdepth 1 -name "*.zip" -delete
+          echo "Remaining files:"
+          ls -la
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          force_orphan: true
+          enable_jekyll: false

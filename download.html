@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肌骨康复速查V2.0 - 下载</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .file-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s;
+  }
+  .file-item:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+  }
+  .file-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  .file-info {
+    flex: 1;
+  }
+  .file-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  .file-desc {
+    font-size: 12px;
+    color: #888;
+  }
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  .download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+  .preview-btn {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+  }
+  .preview-btn:hover {
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+  }
+  .divider {
+    height: 1px;
+    background: #eee;
+    margin: 25px 0;
+  }
+  .tip {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #856404;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>肌骨康复速查 V2.0</h1>
+    <p class="subtitle">肌肉查询 · 临床诊断 · 评估量表 · 病例管理</p>
+
+    <a href="/rehab-app-v2.zip" download="肌骨康复速查V2.0.zip" class="file-item" style="text-decoration:none;color:inherit;">
+      <div class="file-icon">ZIP</div>
+      <div class="file-info">
+        <div class="file-name">完整压缩包</div>
+        <div class="file-desc">包含所有文件，约 4.8MB</div>
+      </div>
+      <div class="download-btn">下载</div>
+    </a>
+
+    <a href="/rehab-app-v2/肌骨康复速查V2.0.html" download="肌骨康复速查V2.0.html" class="file-item" style="text-decoration:none;color:inherit;">
+      <div class="file-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);">HTML</div>
+      <div class="file-info">
+        <div class="file-name">单文件版（推荐）</div>
+        <div class="file-desc">双击即用，无需安装</div>
+      </div>
+      <div class="download-btn">下载</div>
+    </a>
+
+    <a href="/rehab-app-v2/肌骨康复速查V2.0.html" target="_blank" class="file-item" style="text-decoration:none;color:inherit;">
+      <div class="file-icon" style="background:linear-gradient(135deg,#11998e,#38ef7d);">👁</div>
+      <div class="file-info">
+        <div class="file-name">在线预览</div>
+        <div class="file-desc">在浏览器中直接查看</div>
+      </div>
+      <div class="download-btn preview-btn">打开</div>
+    </a>
+
+    <div class="divider"></div>
+
+    <div class="tip">
+      <strong>💡 使用说明：</strong><br>
+      1. 推荐下载「单文件版」，双击即可在浏览器中打开使用<br>
+      2. 完全离线可用，无需联网<br>
+      3. 支持手机和电脑都能用
+    </div>
+  </div>
+</body>
+</html>

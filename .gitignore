@@ -1,0 +1,24 @@
+*.pyc
+__pycache__
+# 大文件/构建产物 - 不部署到GitHub Pages
+single-file-v3.html
+index-single.html
+diseases.json
+muscles.json
+muscles-simple.json
+muscle-quickref.json
+scales-extra.js
+clinical-tools.js
+rehab-protocols.js
+knowledge-base.js
+generate_data.py
+gen_data.py
+inspect_headers.py
+inspect_special.py
+build_single.py
+analyze.js
+CODE_WIKI.md
+# 原始数据/设计文件
+*.xlsx
+*.pdf
+*.zip
